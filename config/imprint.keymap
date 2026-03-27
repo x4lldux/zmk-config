@@ -122,13 +122,13 @@
         <&zip_temp_layer 3 500>;
 };
 
-//left hand trackball configuration
 
+//left hand trackball configuration
 &trackball_central_listener {
     input-processors =
-        // multiply sensitivity by 1, divide by 3 (make it slower for scrolling),,,,
-        <&zip_xy_scaler 1 2>,
-        // make this trackball output scrolling events by default instead of cursor movement,,,,
+        /* multiply sensitivity by 1, divide by 16 (make it slower for scrolling) */
+        <&zip_xy_scaler 1 16>,
+        /* make this trackball output scrolling events by default instead of cursor movement */
         <&zip_xy_to_scroll_mapper>,
         // invert vertical scrolling so that the view moves in the same direction as the top of the trackball.,,,
         <&zip_scroll_transform INPUT_TRANSFORM_Y_INVERT>;
