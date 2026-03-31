@@ -1,0 +1,3 @@
+&trackball_peripheral {
+    cpi = <1200>;
+};

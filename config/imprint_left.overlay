@@ -1,0 +1,3 @@
+&trackball_central {
+    cpi = <1200>;
+};
