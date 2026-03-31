@@ -143,7 +143,9 @@
 &trackball_peripheral_listener {
     input-processors =
         // activate layer 3 within 666ms of the trackball moving
-        <&zip_temp_layer 3 666>;
+        <&zip_temp_layer 3 666>,
+         /* decrease sensitivity by 20% */
+        <&zip_xy_scaler 8 10>;
 };
 
 
