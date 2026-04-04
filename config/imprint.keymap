@@ -73,6 +73,11 @@
 
             /* layers = <3>; */
         };
+
+        combo_cmd_space {
+            bindings = <&kp RG(SPACE)>;
+            key-positions = <75 81>;
+        };
     };
 
     keymap {
