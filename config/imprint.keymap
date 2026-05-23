@@ -84,6 +84,7 @@
         compatible = "zmk,keymap";
 
         default_layer {
+            display-name = "Default";
             bindings = <
 &kp ESC    &kp F1     &kp F2    &kp F3          &kp F4                        &kp F5                &kp F6         &td_f7_playpause  &kp F8          &td_f9_mute  &kp F10   &td_f1211
 &kp EQUAL  &kp N1     &kp N2    &kp N3          &kp N4                        &kp N5                &kp N6         &kp N7            &kp N8          &kp N9       &kp N0    &kp MINUS
@@ -110,6 +111,7 @@
                             &kp PAGE_DOWN  &trans  &kp END    &trans      &trans            &trans
             >;
 
+            display-name = "Numpad";
             label = "Numpad / Media";
         };
 
@@ -125,6 +127,7 @@
                                                         &trans        &trans        &trans    &trans           &trans           &trans
             >;
 
+            display-name = "Control";
             label = "KBD Controll";
         };
 
@@ -140,6 +143,7 @@
                                       &trans     &trans  &trans    &trans  &trans  &trans
             >;
 
+            display-name = "Mouse";
             label = "Auto Mouse";
         };
 
@@ -155,6 +159,7 @@
                                     &trans     &trans  &trans    &trans  &trans  &trans
             >;
 
+            display-name = "Gaming";
             label = "Gaming";
         };
     };
