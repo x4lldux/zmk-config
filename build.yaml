@@ -28,7 +28,6 @@ include:
     artifact-name: imprint_right_peripheral
   - board: xiao_ble//zmk
     shield: imprint_dongle prospector_adapter
-    cmake-args: -DCONFIG_ZMK_RGB_UNDERGLOW=n
     artifact-name: imprint-x4
   - board: assimilator-bt
     shield: imprint_left settings_reset
