@@ -6,6 +6,8 @@ manifest:
       url-base: https://github.com/Cyboard-DigitalTailor
     - name: carrefinho
       url-base: https://github.com/carrefinho
+    - name: not-in-stock
+      url-base: https://github.com/not-in-stock
     # Additional modules containing boards/shields/custom code can be listed here as well
     # See https://docs.zephyrproject.org/3.2.0/develop/west/manifest.html#projects
   projects:
@@ -18,7 +20,7 @@ manifest:
       revision: main
       import: config/west.yml
     - name: prospector-zmk-module
-      remote: carrefinho
-      revision: feat/new-status-screens
+      remote: not-in-stock
+      revision: feat/add-display-sleep
   self:
     path: config
