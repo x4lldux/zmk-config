@@ -20,5 +20,20 @@
 include:
   - board: assimilator-bt
     shield: imprint_left
+    cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
+    artifact-name: imprint_left_peripheral
   - board: assimilator-bt
     shield: imprint_right
+    cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
+    artifact-name: imprint_right_peripheral
+  - board: xiao_ble//zmk
+    shield: imprint_dongle prospector_adapter
+    cmake-args: -DCONFIG_ZMK_RGB_UNDERGLOW=n
+    artifact-name: imprint-x4
+  - board: assimilator-bt
+    shield: imprint_left settings_reset
+    artifact-name: settings_reset_assimilator_bt
+  - board: xiao_ble//zmk
+    shield: settings_reset
+    cmake-args: -DCONFIG_ZMK_RGB_UNDERGLOW=n
+    artifact-name: settings_reset_xiao_ble
