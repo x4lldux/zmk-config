@@ -29,6 +29,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD_LSHIFT_CAPSWORD_CAPS";
             #binding-cells = <0>;
+            tapping-term-ms = <300>;
             bindings = <&kp LSHFT>, <&caps_word>, <&kp CAPSLOCK>;
         };
 
